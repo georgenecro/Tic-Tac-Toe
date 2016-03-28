@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TrilizaBlueTooth</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="newGame">New Game</string>
+    <string name="localGame">Local Game</string>
+    <string name="foreignGame">Foreign Game</string>
+    <string name="back">Back</string>
+    <string name="searchNew">Search For Devices</string>
+    <string name="pairedDevices">Paired Devices</string>
+
+</resources>

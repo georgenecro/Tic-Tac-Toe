@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tictactoe"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tictactoe.GameIndex"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.tictactoe.NewGame"
+            android:label="@string/app_name"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.tictactoe.NEWGAME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.tictactoe.Credits"
+            android:label="@string/app_name"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.tictactoe.CREDITS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.tictactoe.LocalHome"
+            android:label="@string/app_name"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.tictactoe.LOCALHOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.tictactoe.ForeignHome"
+            android:label="@string/app_name"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.tictactoe.FOREIGNHOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
